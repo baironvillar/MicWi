@@ -4,7 +4,7 @@ MicWi Studio es una aplicación para Linux que te permite utilizar tu teléfono 
 
 Al utilizar tecnologías web (WebRTC/WebSockets) en el teléfono, **no requiere instalar ninguna aplicación nativa en tu celular**.
 
-![MicWi Screenshot](https://ibb.co/MyzsxLMt)
+![MicWi Screenshot](https://i.ibb.co/GfZ04jc8/Captura-desde-2026-05-12-20-29-48.png)
 
 ## Descarga Directa e Instalación (Recomendado) 🚀
 
