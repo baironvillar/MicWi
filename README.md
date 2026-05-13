@@ -4,13 +4,14 @@ MicWi Studio es una aplicación para Linux que te permite utilizar tu teléfono 
 
 Al utilizar tecnologías web (WebRTC/WebSockets) en el teléfono, **no requiere instalar ninguna aplicación nativa en tu celular**.
 
-![MicWi Screenshot](https://via.placeholder.com/600x400?text=Sube+una+captura+de+pantalla+aqui) <!-- Reemplaza este enlace con una captura real de la app cuando la subas a GitHub -->
+![MicWi Screenshot](https://ibb.co/MyzsxLMt)
 
 ## Descarga Directa e Instalación (Recomendado) 🚀
 
 Para instalar la aplicación sin usar la consola, dirígete a la pestaña de **Releases** de este repositorio de GitHub y descarga el instalador correspondiente a tu sistema:
 
-- **Fedora / RHEL / openSUSE:** Descarga el archivo `.rpm` y haz **doble clic** para abrirlo con el instalador gráfico (ej. GNOME Software).
+- **Fedora / RHEL / openSUSE:** Descarga el archivo `.rpm` y haz **doble clic** para abrirlo con el instalador gráfico (ej. GNOME Software). 
+  - *Nota:* Si GNOME Software te muestra un error (un fallo común en Fedora con paquetes locales), abre una terminal en tu carpeta de Descargas y ejecuta: `sudo dnf install ./micwi_1.0.0.x86_64.rpm`
 - **Ubuntu / Debian / Mint:** Descarga el archivo `.deb` y haz **doble clic** para instalarlo.
 
 Una vez instalada, simplemente busca **"MicWi Studio"** en tu menú de aplicaciones de Linux y ábrela.
