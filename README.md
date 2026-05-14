@@ -29,6 +29,12 @@ Una vez instalada, simplemente busca **"MicWi Studio"** en tu menú de aplicacio
 ## Prerrequisitos 
 Para que la aplicación funcione en tu distribución Linux, necesitas tener instaladas las utilidades de PulseAudio (que también son compatibles con PipeWire).
 
+### Firewall
+Si usas un firewall como UFW, necesitas permitir el puerto 8000 para poder acceder desde tu celular:
+```bash
+sudo ufw allow 8000/tcp
+```
+
 En distribuciones basadas en Debian/Ubuntu:
 ```bash
 sudo apt update
@@ -49,7 +55,7 @@ sudo pacman -S libpulse
 
 1. **Clona el repositorio:**
    ```bash
-   git clone https://github.com/TU_USUARIO/micwi.git
+   git clone https://github.com/baironvillar/MicWi.git
    cd micwi
    ```
 
