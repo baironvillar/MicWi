@@ -12,7 +12,13 @@ Para instalar la aplicación sin usar la consola, dirígete a la pestaña de **R
 
 - **Fedora / RHEL / openSUSE:** Descarga el archivo `.rpm` y haz **doble clic** para abrirlo con el instalador gráfico (ej. GNOME Software). 
   - *Nota:* Si GNOME Software te muestra un error (un fallo común en Fedora con paquetes locales), abre una terminal en tu carpeta de Descargas y ejecuta: `sudo dnf install ./micwi_1.0.0.x86_64.rpm`
+
 - **Ubuntu / Debian / Mint:** Descarga el archivo `.deb` y haz **doble clic** para instalarlo.
+
+- **Arch Linux**: Descarga el archivo `.tar.gz` y en la terminal ingresa los siguientes comandos
+  - tar xzf micwi-1.0-linux-x64.tar.gz
+  - chmod +x install.sh
+  - ./install.sh
 
 Una vez instalada, simplemente busca **"MicWi Studio"** en tu menú de aplicaciones de Linux y ábrela.
 
@@ -84,13 +90,15 @@ sudo pacman -S libpulse
 ---
 
 ## Compilar como Ejecutable (Standalone)
-Si deseas crear un archivo ejecutable para no tener que usar la consola en el futuro, puedes empaquetarlo usando Flet Pack (que internamente usa PyInstaller).
+Si deseas crear un archivo ejecutable para no tener que usar la consola en el futuro, puedes usar el script de build:
 
-Asegúrate de estar en tu entorno virtual y ejecuta:
 ```bash
-flet pack gui.py --name "MicWi" --add-data "static:static" --add-data "cert.pem:." --add-data "key.pem:."
+./build.sh
 ```
-El archivo ejecutable compilado aparecerá en la carpeta `/dist/MicWi`. ¡Puedes moverlo a tu escritorio o a `/usr/local/bin` y ejecutarlo con doble clic!
+
+Esto generará `micwi-1.0-linux-x64.tar.gz` listo para distribuir.
+
+El script usa `flet pack` (PyInstaller) para compilar todo en un solo binario. El archivo compilado aparecerá en la carpeta `dist/MicWi/`.
 
 ---
 
